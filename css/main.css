@@ -14,7 +14,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../img/home_bg.png") center;
+  background: url("../img/home_bg_mobile.png") center;
   background-size: cover;
 }
 
@@ -467,6 +467,8 @@
     text-align: left;
     padding-top: 20vh;
     padding-left: 10vh;
+    background: url("../img/home_bg.png") center;
+    background-size: cover;
   }
   .menu-btn {
     visibility: hidden;

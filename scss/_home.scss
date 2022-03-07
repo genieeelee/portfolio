@@ -4,17 +4,11 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: 
-  // linear-gradient(
-  //     to right,
-  //     rgba(#fff, 0.5),
-  //     rgba(#fff, 0.1)
-  //   ),
-    url("../img/home_bg.png") center;
+  background: url("../img/home_bg_mobile.png") center;
   background-size: cover;
 
   h2 {
-    color: set-text-color($primary-color);  
+    color: set-text-color($primary-color);
   }
 
   &__name {
