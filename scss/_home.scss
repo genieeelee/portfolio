@@ -1,25 +1,26 @@
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 20vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(
-      to right,
-      rgba(#000, 0.5),
-      rgba(#000, 0.1)
-    ),
-    url("../img/home_bg.png") center left;
+  background: 
+  // linear-gradient(
+  //     to right,
+  //     rgba(#fff, 0.5),
+  //     rgba(#fff, 0.1)
+  //   ),
+    url("../img/home_bg.png") center;
   background-size: cover;
 
   h2 {
-    color: set-text-color($secondary-color);  
+    color: set-text-color($primary-color);  
   }
 
   &__name {
     font-size: 2.5rem;
     padding-bottom: 1rem;
-    color: set-text-color($secondary-color);
+    color: set-text-color($primary-color);
 
     &--last {
       font-weight: 700;

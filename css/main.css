@@ -8,25 +8,24 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 20vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../img/home_bg.png") center left;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../img/home_bg.png") center left;
+  background: url("../img/home_bg.png") center;
   background-size: cover;
 }
 
 .home h2 {
-  color: #fff;
+  color: #000;
 }
 
 .home__name {
   font-size: 2.5rem;
   padding-bottom: 1rem;
-  color: #fff;
+  color: #000;
 }
 
 .home__name--last {
@@ -51,7 +50,7 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #D3D3D3;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -62,7 +61,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #D3D3D3;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -73,7 +72,7 @@
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #fff;
+  background: #D3D3D3;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -123,7 +122,7 @@
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #f2e6d6;
+  background: #000000;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
@@ -150,7 +149,7 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #388087;
+  color: #fff;
 }
 
 .nav .menu-nav__link {
@@ -164,7 +163,7 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #388087;
+  color: #000;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -194,8 +193,6 @@
 .about__bio-image {
   height: 20vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../img/home_bg.png") center left;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../img/home_bg.png") center left;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,10 +219,36 @@
   margin: 2rem auto 1rem;
   padding: 1rem;
   border-radius: 1rem;
+  line-height: 1.5rem;
 }
 
 .about__bio .text-secondary {
   margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.about__bio i {
+  margin-right: 20px;
+  color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.about__bio i:hover {
+  color: #D3D3D3;
+}
+
+.about__bio .resume {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 2rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.about__bio .resume:hover {
+  background-color: #D3D3D3;
+  color: #000;
 }
 
 .about .jobs {
@@ -241,7 +264,7 @@
 .about .jobs__job {
   background: #fefefd;
   padding: 1rem;
-  border-bottom: 5px solid #388087;
+  border-bottom: 5px solid #000000;
   border-radius: 1rem;
   line-height: 1.2rem;
 }
@@ -263,20 +286,6 @@
   margin: 0.3rem 0;
 }
 
-.about .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.about .social-icons a {
-  color: #000;
-}
-
 .about footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
           transform: rotate(90deg) translate(-3rem, -5rem);
@@ -290,8 +299,6 @@
 .projects-image {
   height: 20vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../img/home_bg.png") center left;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../img/home_bg.png") center left;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,7 +348,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #388087;
+  background: #000000;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -373,7 +380,7 @@
 
 .projects__btn {
   opacity: 0;
-  color: #fff;
+  color: #D3D3D3;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -412,15 +419,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../img/home_bg.png") center left;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../img/home_bg.png") center left;
+  background: url("../img/home_bg.png") center;
   background-size: cover;
 }
 
 .contact h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #fff;
+  color: #D3D3D3;
 }
 
 .contact__list {
@@ -479,9 +485,12 @@
     display: inline;
     padding-right: 1.5rem;
   }
+  .nav .menu-nav__item.active > a {
+    color: #000;
+  }
   .nav .menu-nav__link {
     font-size: 1.5rem;
-    color: #fff;
+    color: #D3D3D3;
   }
   .about__bio {
     font-size: 1rem;
@@ -511,7 +520,6 @@
 }
 
 body {
-  background: #f2e6d6;
   color: #000;
   height: 100vh;
   font-family: "Raleway", "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -525,12 +533,12 @@ h3 {
 }
 
 a {
-  color: #000;
+  color: #D3D3D3;
   text-decoration: none;
 }
 
 .text-secondary {
-  color: #388087;
+  color: #000000;
 }
 
 header {
@@ -553,7 +561,7 @@ main .social-icons {
 
 main .social-icons a {
   padding: 0.4rem;
-  color: #fff;
+  color: #D3D3D3;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -569,6 +577,6 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: #fff;
+  color: #D3D3D3;
 }
 /*# sourceMappingURL=main.css.map */
