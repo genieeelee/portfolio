@@ -240,6 +240,7 @@
 
 .about__bio .resume {
   background-color: #000;
+  color: #fff;
   padding: 1rem;
   border-radius: 2rem;
   -webkit-transition: all 0.5s ease-in-out;
