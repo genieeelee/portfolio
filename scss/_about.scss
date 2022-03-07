@@ -1,0 +1,75 @@
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(#000, 0.5), rgba(#000, 0.1)),
+      url("../img/home_bg.png") center left;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__bio {
+    background-color: lighten($primary-color, 10%);
+    width: 60vw;
+    align-items: center;
+    text-align: left;
+    margin: 2rem auto 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .text-secondary {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .jobs {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &__job {
+      background: lighten($primary-color, 10%);
+      padding: 1rem;
+      border-bottom: 5px solid $secondary-color;
+      border-radius: 1rem;
+      line-height: 1.2rem;
+
+      h3,
+      h4 {
+        margin: 0.5rem 0;
+      }
+
+      h4 {
+        font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+        &.regular {
+          font-weight: 600;
+        }
+      }
+
+      h6 {
+        margin: 0.3rem 0;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: set-text-color($primary-color);
+    }
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
+    color: set-text-color($primary-color);
+  }
+}

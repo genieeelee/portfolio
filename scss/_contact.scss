@@ -1,0 +1,42 @@
+.contact {
+  height: 100%;
+  padding-top: 20vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, rgba(#000, 0.5), rgba(#000, 0.1)),
+    url("../img/home_bg.png") center left;
+  background-size: cover;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: set-text-color($secondary-color);
+  }
+
+  &__list {
+    background: $primary-color;
+    // opacity: 0.9;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+
+    i {
+      padding-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  }
+}
